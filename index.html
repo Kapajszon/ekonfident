@@ -126,6 +126,24 @@
       font-size: 14px;
       color: var(--muted);
     }
+
+    ::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #a0c4ff; /* jasnoniebieski pasek */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1d4ed8; /* ciemnoniebieski "uchwyt" */
+  border-radius: 6px;
+  border: 3px solid #a0c4ff; /* oddzielenie od tła */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2563eb; /* efekt na hover */
+}
   </style>
 </head>
 <body>
@@ -182,3 +200,4 @@
   </footer>
 </body>
 </html>
+
