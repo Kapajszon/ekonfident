@@ -1,0 +1,90 @@
+:root {
+  --accent:#7c3aed;
+  --muted:#64748b;
+  --radius:12px;
+  --maxw:680px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Inter,system-ui,Arial;
+  background:white;
+  color:#111827;
+  line-height:1.6;
+}
+.hero{
+  text-align:center;
+  padding:70px 20px 50px;
+  background:linear-gradient(135deg,#f3e8ff 0%, #e0e7ff 100%);
+}
+.logo{width:72px;height:72px;margin-bottom:16px}
+.hero h1{font-size:36px;font-weight:800}
+.lead{color:var(--muted);margin:12px 0 20px}
+.hero-actions{margin-top:20px}
+.info{max-width:var(--maxw);margin:0 auto;padding:50px 20px}
+.info .content{margin-bottom:36px}
+.info h2{font-size:24px;margin-bottom:8px;color:#111827}
+.info p{color:#374151}
+.form-section{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:60px 20px;
+  border-top:1px solid #e5e7eb;
+}
+form{
+  background:#f9fafb;
+  padding:28px;
+  border-radius:var(--radius);
+  box-shadow:0 4px 14px rgba(0,0,0,0.06);
+}
+form h2{margin-bottom:20px;font-size:22px}
+.row{display:flex;flex-direction:column;margin-bottom:16px}
+.row label{margin-bottom:6px;font-weight:600;font-size:14px;color:#374151}
+.row input,.row textarea{
+  border:1px solid #d1d5db;
+  border-radius:var(--radius);
+  padding:10px;
+  font-size:15px;
+}
+.row input:focus,.row textarea:focus{
+  outline:none;
+  border-color:var(--accent);
+  box-shadow:0 0 0 2px rgba(124,58,237,0.3);
+}
+.row.checkbox{flex-direction:row;align-items:center;gap:8px}
+.actions{margin-top:20px}
+.btn{
+  background:var(--accent);
+  color:white;
+  border:none;
+  border-radius:var(--radius);
+  padding:12px 18px;
+  font-weight:600;
+  cursor:pointer;
+  transition:transform .15s, background .2s;
+}
+.btn:hover{background:#6d28d9;transform:translateY(-2px)}
+.btn.big{font-size:18px;padding:14px 24px}
+.btn.ghost{
+  background:transparent;
+  color:#374151;
+  border:1px solid #d1d5db;
+}
+.result{
+  margin-top:20px;
+  padding:20px;
+  border-radius:var(--radius);
+  background:#f3f4f6;
+  border:1px solid #e5e7eb;
+}
+.hidden{display:none}
+.snapshot{
+  background:#fff;
+  border:1px solid #d1d5db;
+  padding:12px;
+  border-radius:var(--radius);
+  margin-top:12px;
+  white-space:pre-wrap;
+}
+.foot{
+  text-align:center;
+  font-size:
